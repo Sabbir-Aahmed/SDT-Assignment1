@@ -1,0 +1,107 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.body-container {
+    background-color: rgb(8, 22, 26);
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0;
+}
+.navbar-toggler-icon div {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-nav .nav-link{
+    font-weight: bold;
+    color: #ffffff;
+  }
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color: rgb(0, 200, 255);
+  }
+.navbar-nav .btn:hover{
+    background-color:rgb(0, 200, 255);
+    color: white;
+}
+
+.banner-left {
+    padding-left: 5%;
+}
+.banner-right img {
+    max-width: 100%;
+}
+.social-buttons .btn {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: rgb(0, 200, 255);
+    border: 1px solid rgb(0, 200, 255);
+    transition: 0.3s;
+}
+.social-buttons .btn:hover {
+    background-color: rgb(0, 200, 255);
+    color: #000;
+}
+.slider-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(8, 22, 26);
+    color: white;
+    padding: 30px 0;
+}
+footer a {
+    color:rgb(0, 200, 255);
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+footer a:hover {
+   color: white;
+}
+
+::placeholder {
+   color: white !important;
+   opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+.navbar-collapse {
+    justify-content: center !important;
+    text-align: center;
+}
+.navbar-nav .nav-link {
+    margin: 0.5rem 0;
+ }
+}
